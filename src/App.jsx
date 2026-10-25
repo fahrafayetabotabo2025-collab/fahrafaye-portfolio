@@ -1,0 +1,2 @@
+import {Routes,Route} from 'react-router-dom'; import Navbar from './components/Navbar'; import Home from './pages/Home'; import Project from './pages/Project'; import EditorBar from './components/EditorBar';
+export default function App(){return <><EditorBar/><Navbar/><Routes><Route path="/" element={<Home/>}/><Route path="/work/:slug" element={<Project/>}/></Routes><footer><div className="shell"><b>Fahra Faye.</b><span>Social Media • Content • Creative Strategy</span><span>© {new Date().getFullYear()}</span></div></footer></>}
